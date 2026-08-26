@@ -1,0 +1,7 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Capabilities available to the main Acid window",
+  "windows": ["main"],
+  "permissions": ["core:default"]
+}

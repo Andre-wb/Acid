@@ -1,0 +1,21 @@
+[package]
+name = "acid-ide"
+version = "0.1.0"
+description = "Acid — a fast, sandboxed Rust IDE"
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["process", "rt-multi-thread", "macros"] }
+portable-pty = "0.8"
+rfd = "0.15"
+notify = "6.1"
+
+[[bin]]
+name = "acid-ide"
+path = "src/main.rs"
